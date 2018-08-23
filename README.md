@@ -21,8 +21,6 @@ There should be 3 types of pages: the home page, a page that shows all available
     - For each clearance item on the page, make sure that the site indicates that the item is on clearance (next to the price, for instance).
 3. Do not show items on the site that have a quantity of 0.
 
-The website should be deployed to Heroku, and a link to the live site should be included with your homework repo.
-
 ## Application design tips
 
 1. You don't need all the CRUD functions in this application, and you do not need to persist anything to a database. Since you only have two pages, you only need two controller actions: one for the list (or index) page and the second for the detail (or show) page.
@@ -43,5 +41,6 @@ If you get to MVP and have more time, here are some suggestions to keep going.
 ## Resources
 
 - Images, CSV file, and a background image are included in the zip file in this repo
-- [Ruby standard library CSV](https://ruby-doc.org/stdlib-2.5.0/libdoc/csv/rdoc/CSV.html)
+- [Ruby standard library CSV](https://ruby-doc.org/stdlib-2.5.1/libdoc/csv/rdoc/CSV.html)
+- [A Guide to the Ruby CSV Library](https://www.sitepoint.com/guide-ruby-csv-library-part/)
 - [Video Prep](https://vimeo.com/139012189)
