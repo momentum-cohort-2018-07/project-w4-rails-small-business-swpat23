@@ -1,0 +1,40 @@
+<p>
+  <%= link_to 'Home', '/' %>
+</p>
+
+<h1> Item Details </h1>
+<table>
+  <thead>
+    <tr>
+      <th>Item Name</th>
+      <th>Description</th>
+      <th>Price</th>
+      <th>Condition</th>
+      <th>Width</th>    
+      <th>Length</th>
+      <th>Height</th>
+      <th>Quantity</th>
+      <th>Category</th>
+    </tr>
+  </thead>
+  
+  <tbody>
+    
+      <tr>
+       <td><%= @product.item %></td>
+       <td><%= @product.description %></td>
+       <td><%= @product.price %></td>
+       <td><%= @product.condition %></td>
+       <td><%= @product.dimension_w %></td>
+       <td><%= @product.dimension_l %></td>
+       <td><%= @product.dimension_h %></td>
+       <td><%= @product.quantity %></td>
+       <td><%= @product.category %></td>
+
+     </tr>
+     
+  <tbody/>
+
+
+</table>
+

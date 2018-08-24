@@ -1,0 +1,30 @@
+<h1>Here is our current product inventory - Click on "View Details" to view the details</h1>
+ 
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Item Name</th>
+      <th>Price</th>
+      <th>Condition</t>
+      <th>Details</t>
+    </tr>
+  </thead>
+  
+  <tbody>
+    <% @products.each do |product| %>
+      <tr>
+       <td><%= product.item %></td>
+       <td><%= product.price %></td>
+       <td><%= product.condition %></td>
+       <td>
+          <%= link_to "View Details", "/products/#{product.id}" %>
+       </td>
+
+     </tr>
+      <% end %>
+  <tbody/>
+
+
+</table>
