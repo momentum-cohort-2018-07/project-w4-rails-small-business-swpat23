@@ -7,6 +7,7 @@
     <tr>
       <th>Item Name</th>
       <th>Price</th>
+      <th>Sales Price</t>
       <th>Condition</t>
       <th>Details</t>
     </tr>
@@ -17,6 +18,7 @@
       <tr>
        <td><%= product.item %></td>
        <td><%= product.price %></td>
+       <td><%= product.sales_price %></td>
        <td><%= product.condition %></td>
        <td>
           <%= link_to "View Details", "/products/#{product.id}" %>

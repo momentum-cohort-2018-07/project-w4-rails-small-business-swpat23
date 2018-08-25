@@ -2,6 +2,11 @@ require "csv"
 
 class ProductsController < ApplicationController
   
+  def sales_price
+    @products = fetch_products
+  end
+
+
   def list
     @products = fetch_products
   end
@@ -20,20 +25,20 @@ class ProductsController < ApplicationController
     product.id = counter
     product.item = row.to_h["item"]
     product.description = row.to_h["description"]
-    product.price = row.to_h["price"]
     product.condition = row.to_h["condition"]
     product.dimension_w = row.to_h["dimension_w"]
     product.dimension_l = row.to_h["dimension_l"]
     product.dimension_h = row.to_h["dimension_h"]
     product.quantity = row.to_h["quantity"]
     product.category = row.to_h["category"]
-
+    product.price = row.to_h["price"]
+    product.sales_price = row.to_h["sales_price"]
+    
       @products << product
       counter += 1
     end
-
     @products
-
   end
+    
 
 end
