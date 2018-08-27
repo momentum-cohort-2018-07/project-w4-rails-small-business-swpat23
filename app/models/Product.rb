@@ -10,13 +10,20 @@ class Product
       sales_price = [(price * 0.90)]
 
     elsif condition = "average"
-      sales_price = price * 0.80
+      then
+      sales_price = [(price * 0.80)]
 
-    else price = "price"
+    else price = [price]
     
     end
-    
   end
+
+  def quantity_zero
+    if quantity = "0"
+
+    end
+  end
+
 
   # @product
 
